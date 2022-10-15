@@ -1,0 +1,13 @@
+
+
+
+  <!doctype html>
+  <title>Upload PDF File</title>
+  <h1>Upload PDF File</h1>
+  <form action="{{ url_for('index')}}" method=post enctype=multipart/form-data>
+    <label for="fname">Enter Pages not to read (space seperated) if none enter none.</label>
+    <input type="text" id="pages" name="pages"><br><br>
+    <label for="fname">Enter PDF file to read</label>
+    <input type=file name=file><br>
+    <input type=submit value=Generate>
+  </form>

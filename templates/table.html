@@ -1,0 +1,11 @@
+
+
+{% for key, value in result.items() %}
+<h1>{{key}}</h1>
+{% for key2, value2 in result[key].items() %}
+
+  <h1>Question:{{key2}}</h1>
+  <h2>Answer:{{value2}}</h2>
+ 
+{% endfor %}
+{% endfor %}
